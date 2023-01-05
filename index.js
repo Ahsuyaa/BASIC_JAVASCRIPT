@@ -32,8 +32,12 @@
 // let y= 20;
 // let find =name + y;
 // console.log(find);
-const name= "aayusha";
-const surname= "raut";
-console.log("my name is :"+name + surname);
-const bio =(`my name is : ${name} ${surname} .`);
-console.log(`hi :${bio}`);
+// const name= "aayusha";
+// const surname= "raut";
+// console.log("my name is :"+name + surname);
+// const bio =(`my name is : ${name} ${surname} .`);//template litreal
+// console.log(`hi :${bio}`);
+let name = "aayusha  raut"
+console.log(name);
+console.log(typeof name);
+console.log(typeof Number(name));
