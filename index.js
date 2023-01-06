@@ -37,7 +37,37 @@
 // console.log("my name is :"+name + surname);
 // const bio =(`my name is : ${name} ${surname} .`);//template litreal
 // console.log(`hi :${bio}`);
-let name = "aayusha  raut"
-console.log(name);
-console.log(typeof name);
-console.log(typeof Number(name));
+// let name = "aayusha  raut"
+// console.log(name);
+// console.log(typeof name);
+// console.log(typeof Number(name));
+// type conversion and strings methods
+// let number = 123;
+// console.log(number);
+// // console.log(typeof String(number));
+// console.log(typeof number.toString());
+// string method
+let str ="Hi ,user!";
+let y = " are you enjoying coding ?";
+let z= "  do you like coding?     ";
+//charAT
+// console.log(str.charAt(0));
+// length
+// console.log(str.length);
+// concat
+// console.log(str.concat(y));
+//replace
+// console.log(str.replace("hi","hello"));
+//indexof
+// console.log(str.indexOf("u"));
+// console.log(str.lastIndexOf("r"));
+//include
+// console.log(str.includes("hi"));
+//split
+// console.log(str.split("u"));
+//to lower case
+// console.log(str.toLowerCase());
+// console.log(str.toUpperCase());
+// console.log(z.trim());\
+console.log(str.slice(0,9));
+
