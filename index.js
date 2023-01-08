@@ -47,9 +47,9 @@
 // // console.log(typeof String(number));
 // console.log(typeof number.toString());
 // string method
-let str ="Hi ,user!";
-let y = " are you enjoying coding ?";
-let z= "  do you like coding?     ";
+// let str ="Hi ,user!";
+// let y = " are you enjoying coding ?";
+// let z= "  do you like coding?     ";
 //charAT
 // console.log(str.charAt(0));
 // length
@@ -69,5 +69,11 @@ let z= "  do you like coding?     ";
 // console.log(str.toLowerCase());
 // console.log(str.toUpperCase());
 // console.log(z.trim());\
-console.log(str.slice(0,9));
+// console.log(str.slice(0,9));
+const heading = document.getElementById("mycss");
+ heading.innerText ="i love javascript";
+ heading.style.background="red";
+ heading.style.color="white";
+ heading.style.textAlign= "center";
+
 
