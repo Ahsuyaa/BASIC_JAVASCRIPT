@@ -194,30 +194,72 @@ const heading = document.getElementById("mycss");
 //         break;
         
 // }
-let month ="feb";
-switch(month)
-{
-    case "jan":
-    case "feb":
-    case "march":
-        console.log("here is first three month");
-        break;
-     case "april":
-     case "may":
-     case "june":
-                console.log("month start with april and end with june");
-                break;
-     case "july":
-     case "aug":
-     case "sep":
-                 console.log("here month start with july and end with sep ");
-                 break;
-     case "oct":
-     case "nov":
-     case "dec":
-                  console.log("last trimester");
-                  break;
-            default:
-                console.log("error");
-                break;
-}
+// 
+// for(i=0;i<10;i++)
+// {
+//     console.log(i);  
+// }
+// let i =10;
+// while(i<19)
+// {
+//     console.log(i);
+//     i++;
+// }
+// const num =[1 , 2  ,3,  4, 5];
+// console.log(num.length);
+// console.log(num);
+// console.log(num[2]);
+// let x= 5;
+// do 
+// {
+//  console.log("hello world");
+   
+// } while(x<5);
+// const myarr =[2,2,4,11,23,24,5,7,8,9,12,1,0];
+// console.log(myarr.length);
+// const newArr =["shyam","hari","gita","sita","mina"];
+// console.log(newArr);
+// //push method
+// const newAdd  = newArr.push("krishna");
+// console.log(newArr);
+//unshift
+// const newarr =["mok","huge","talk","see"];
+// console.log(newarr.unshift("captain "));
+// console.log(newarr);
+//pop method
+// const newarr =[3,4,5,6,7];
+// console.log(newarr);
+// const newdata= newarr.pop();
+// console.log(newdata);
+// shift
+// const newarr =[1,2,33,43,21,0];
+// const newdata = newarr.shift();
+// console.log(newdata);
+// console.log(newarr);
+//concat method
+// let arr1=[1,2,3,4,5];
+// let arr2=["array","structure","enumeration"];
+// console.log(arr1.concat(arr2));
+//filter
+// let newarr =[2,3,4,5,21,6,43,23,76,22];
+// console.log(newarr);
+// const findfilter = newarr.filter((n)=>n>5);
+// console.log(findfilter);
+// console.log(newarr);
+//splice method
+// const newarr =[3,4,5,6,21,32,43];
+// console.log(newarr);
+// const newdata =newarr.splice(2,3);
+// console.log(newarr);
+//reverse
+// const newarr =[6,21,7,43,8,9,10,11,12,13];
+// console.log(newarr);
+// const newdata = newarr.reverse();
+// console.log(newdata);
+// console.log(newarr);
+//sort
+const newarr =[11,23,4,1,6,43,22,78];
+const newdata =newarr.sort();
+console.log(newarr);
+
+
