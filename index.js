@@ -258,8 +258,148 @@ const heading = document.getElementById("mycss");
 // console.log(newdata);
 // console.log(newarr);
 //sort
-const newarr =[11,23,4,1,6,43,22,78];
-const newdata =newarr.sort();
-console.log(newarr);
+// const newarr =[11,23,4,1,6,43,22,78];
+// const newdata =newarr.sort();
+// console.log(newarr);
+// let arr =[]
+// arr[0]=1;
+// for(let i= 0;i<10;i++)
+// {
+// arr[i]= i;
+// arr.push(i);
+// console.log(arr);
+// }
+//OBJECT
+// const myprofile =
+// {
+//     firstname:"aayusha",
+//     lastname:"raut",
+//     Age:21,
+//     ismarried:false,
+//     issalary: function()
+//     {
+//         console.log("ma sanga jagir xaina");
+//         return true;
+//     },
+// };
+// console.log(myprofile);
+// console.log(myprofile.Age);
+// console.log(myprofile["Age"]);
+// console.log(myprofile.issalary());
+const car ={
+    make:"Rover",
+    model:"camry",
+    color:"red",
+    runwheel:4,
+    iselectric:false,
+    startengine:function()
+        {
+            console.log("start");
+            return true;
+        },
+        endengine:function()
+        {
+            console.log("end");
+            return flase;
+        }
+    
+    
+};
+// console.log(car);
+// console.log(car.startengine());
+// console.log(car.endengine());
+// if(car.startengine())
+// {
+//     console.log("car is about to start");
+// }
+// else if (car.endengine())
+// {
+//     console.log("car is at steady "); 
+// }
+// else{
+//     console.log("error");
+// }
+//function
+// function mydata() {
+//     let a=90;
+//     let b=12;
+//     let result=(a+b)/2;
+//     console.log(result);
+    
+// }
+// mydata();
+// function newd(a,b,c) {
+//     return  (a+b+c)/2;
+    
+// }
+// const ans =newd(2,2,2);
+// const ans1 =newd(2,1,2);
+// console.log(ans);
+// console.log(ans1);
+// const myvalue= function()
+// {
+//     let x=3;
+//     let y =4;
+//     let result=x*y;
+//     console.log(result);
+// }
+// console.log(myvalue());
+// function mydata(arr=[]){
+//     let total=0;
+//     for(let i=0;i<arr.length;i++)
+//     {
+//        total=total +arr[i];
+//     }
+//   return total;
 
+// }
+// const ans = mydata([1,2,3,4,5]);
+// console.log(ans);
+//scoping
+// let x=67;// global scope
+// function myscope()
+// {
+//     let x= 67;// local scope
 
+// }
+// console.log(x);
+// var x= 90;
+//  function varr()
+//  {
+//     var x = 9+9;
+//     console.log(x);
+//  }
+//  console.log(x);
+//  varr();
+// function myblock()
+// {
+//     if(true)
+//     {
+//         var x= 9*9;
+//         console.log(x);
+//     }
+   
+// }
+// myblock();
+// let in block and function scope
+// function myfun()
+// {
+//     if(true)
+//     {
+//         let y= (8+2)/2;
+//         console.log(y);
+//     }
+   
+    
+// }
+// myfun();
+function myfunc()
+{
+    if(true)
+    {
+        let x= (15+2)*2;
+        console.log(x);
+    }
+}
+
+myfunc();
