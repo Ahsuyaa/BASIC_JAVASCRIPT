@@ -70,11 +70,11 @@
 // console.log(str.toUpperCase());
 // console.log(z.trim());\
 // console.log(str.slice(0,9));
-const heading = document.getElementById("mycss");
- heading.innerText ="i love javascript";
- heading.style.background="red";
- heading.style.color="white";
- heading.style.textAlign= "center";
+// const heading = document.getElementById("mycss");
+//  heading.innerText ="i love javascript";
+//  heading.style.background="red";
+//  heading.style.color="white";
+//  heading.style.textAlign= "center";
  //condition(if/else)
 //  let email ="ayusharaut395@gmail.com";
 //  let password ="aayusha";
@@ -286,25 +286,25 @@ const heading = document.getElementById("mycss");
 // console.log(myprofile.Age);
 // console.log(myprofile["Age"]);
 // console.log(myprofile.issalary());
-const car ={
-    make:"Rover",
-    model:"camry",
-    color:"red",
-    runwheel:4,
-    iselectric:false,
-    startengine:function()
-        {
-            console.log("start");
-            return true;
-        },
-        endengine:function()
-        {
-            console.log("end");
-            return flase;
-        }
+// const car ={
+//     make:"Rover",
+//     model:"camry",
+//     color:"red",
+//     runwheel:4,
+//     iselectric:false,
+//     startengine:function()
+//         {
+//             console.log("start");
+//             return true;
+//         },
+//         endengine:function()
+//         {
+//             console.log("end");
+//             return flase;
+//         }
     
     
-};
+// };
 // console.log(car);
 // console.log(car.startengine());
 // console.log(car.endengine());
@@ -393,13 +393,52 @@ const car ={
     
 // }
 // myfun();
+// function myfunc()
+// {
+//     if(true)
+//     {
+//         let x= (15+2)*2;
+//         console.log(x);
+//     }
+// }
+
+// myfunc();
+//DOM MANIPULATION
+// const ans =document.head;
+// console.log(ans);
+// const ans =document.body.lastElementChild;
+// console.log(ans);
+// const ans = document.getElementById("myis");
+// ans.innerHTML="hope for best <b>everything will be okay</b>";
+// console.log(ans);
+
+// const ans = document.getElementsByClassName("myyour");
+// console.log(ans[0]);
+// // ans[0].innerHTML="<b>cdvcsjhbj</b.";
+// for(let i= 0;i<ans.length;i++)
+// {
+//     ans[i].innerHTML="<b>cdvcsjhbj</b."; 
+// }
+// const data=document.getElementsByTagName("span");
+// data[0].innerHTML="<strong>i am always happy</strong>";
+// console.log(data[0]);
+const email = document.getElementsByName("email");
+console.log(email[0]);
+email[0].style.backgroundColor="red";
+const mybutton = document.getElementById("clickit");
+console.log(mybutton);
+mybutton.innerText='save';
+// const myquery= document.querySelector('clickit');
+// console.log(myquery);
+mybutton.style.background="blue";
+mybutton.style.color="white";
+mybutton.style.padding="10px";
+mybutton.style.cursor="pointer";
+mybutton.style.border="none";
+mybutton.onclick=myfunc;//reference leko
 function myfunc()
 {
-    if(true)
-    {
-        let x= (15+2)*2;
-        console.log(x);
-    }
+ const create=document.createElement("h2");
+ create.innerHTML="naya heading add vayo";
+document.body.append(create);
 }
-
-myfunc();
