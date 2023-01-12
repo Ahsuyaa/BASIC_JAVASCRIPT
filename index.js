@@ -414,7 +414,7 @@
 
 // const ans = document.getElementsByClassName("myyour");
 // console.log(ans[0]);
-// // ans[0].innerHTML="<b>cdvcsjhbj</b.";
+// ans[0].innerHTML="<b>cdvcsjhbj</b.";
 // for(let i= 0;i<ans.length;i++)
 // {
 //     ans[i].innerHTML="<b>cdvcsjhbj</b."; 
@@ -422,23 +422,92 @@
 // const data=document.getElementsByTagName("span");
 // data[0].innerHTML="<strong>i am always happy</strong>";
 // console.log(data[0]);
-const email = document.getElementsByName("email");
-console.log(email[0]);
-email[0].style.backgroundColor="red";
-const mybutton = document.getElementById("clickit");
-console.log(mybutton);
-mybutton.innerText='save';
+// const email = document.getElementsByName("email");
+// console.log(email[0]);
+// email[0].style.backgroundColor="red";
+// const  mycountry = document.querySelector("#mycountry");
+// mycountry.innerHTML="Nepal is so back in <b> technology</b>";
+// const mybutton = document.getElementById("clickit");
+// console.log(mybutton);
+// mybutton.innerText='save';
 // const myquery= document.querySelector('clickit');
-// console.log(myquery);
-mybutton.style.background="blue";
-mybutton.style.color="white";
-mybutton.style.padding="10px";
-mybutton.style.cursor="pointer";
-mybutton.style.border="none";
-mybutton.onclick=myfunc;//reference leko
-function myfunc()
+//  console.log(myquery);
+// mybutton.style.background="blue";
+// mybutton.style.color="white";
+// mybutton.style.padding="10px";
+// mybutton.style.cursor="pointer";
+// mybutton.style.border="none";
+// const check=document.querySelectorAll("button");
+// console.log("check");
+//     for(let i=0;i<check.length;i++)
+//     {
+//     check[1].innerText="clear";
+//     check[1].style.background="red";
+//     check[1].style.color="white";
+//     check[1].style.cursor="pointer";
+
+
+//     }
+
+//     check[1].onclick=deleteit;
+//     function deleteit()
+//     {
+    
+    
+//     const pleasedelete = document.querySelector("h2");
+//    pleasedelete.remove();
+//     }
+// //mybutton.onclick=myfunc;//reference leko
+// function myfunc()
+// {
+//  const create=document.createElement("h2");
+//  create.innerHTML="naya heading add vayo";
+// document.body.append(create);
+// }
+// const newspan = document.querySelectorAll("span");
+// console.log(newspan);
+
+//     newspan[1].innerText="i am aayusha raut";
+//     newspan[1].style.color="red";
+// //foreach 
+// //if we use for each it cannot return aaray.it only iterate main array
+let arr=[1,2,3,4,5,6];
+// const myforeach =arr.forEach((value,index,array)=>
+// {
+// return array([index]=value+2);
+// }
+// )
+// console.log(myforeach);
+//map
+//if we use map method it returns new array after iterate main array
+//  const mymap =arr.map((value,index,array)=>
+// {
+//  return (array[index]=value+2);
+
+// })
+// console.log(mymap);
+//filter
+// const myfilter = arr.filter((value,index)=>
+// {
+
+// // return value>2;
+// // return value%2===0;
+// return value %2!==0;
+
+// })
+// console.log(myfilter);
+// const myfind=arr.find((value,index)=>
+// {
+//   return value>4;
+// });
+// console.log(myfind);
+//reduce method
+const myreduce=arr.reduce((preval,curval,index,array)=>
 {
- const create=document.createElement("h2");
- create.innerHTML="naya heading add vayo";
-document.body.append(create);
+    console.log(preval);
+     preval = preval + curval;
+    
+    return preval;
 }
+);
+console.log(myreduce);
