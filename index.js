@@ -471,7 +471,7 @@
 //     newspan[1].style.color="red";
 // //foreach 
 // //if we use for each it cannot return aaray.it only iterate main array
-let arr=[1,2,3,4,5,6];
+// let arr=[1,2,3,4,5,6];
 // const myforeach =arr.forEach((value,index,array)=>
 // {
 // return array([index]=value+2);
@@ -502,12 +502,62 @@ let arr=[1,2,3,4,5,6];
 // });
 // console.log(myfind);
 //reduce method
-const myreduce=arr.reduce((preval,curval,index,array)=>
-{
-    console.log(preval);
-     preval = preval + curval;
+// const myreduce=arr.reduce((preval,curval,index,array)=>
+// {
+//     console.log(preval);
+//      preval = preval + curval;
     
-    return preval;
+//     return preval;
+// }
+// );
+// console.log(myreduce);
+// //event listener
+// const newclickbtn= document.getElementById("newclick");
+// newclickbtn.addEventListener("click",()=>
+// {
+//     console.log("clicked!");
+// })
+//add event listener
+const newclick=document.getElementById("myclick");
+const newbox= document.getElementById('mybox');
+const newtag= document.getElementById('mytag');
+newclick.addEventListener("click",()=>
+{
+    // newbox.style.background="purple";
+    // newbox.style.color="white";
+    // newbox.style.margin=" 20px";
+   newbox.classList.add('newcssdiv');
+});
+newbox.addEventListener("mouseover",()=>
+{
+    newclick.style.transform="scale(1.1)";
+    newtag.style.background="yellow";
+});
+const myinput =document.querySelector('input');
+newbox.addEventListener("mouseout",()=>
+{
+    newclick.style.transform="";
+    newtag.style.background="green";
 }
 );
-console.log(myreduce);
+myinput.addEventListener('change',(e)=>
+{
+    console.log(e.target.value);
+});
+newclick.addEventListener('dblclick',()=>
+{
+    document.body.style.background="black";
+});
+newclick.addEventListener('click',()=>
+{
+    document.body.style.background="white";
+});
+newclick.addEventListener('contextmenu',(e)=>
+{
+    e.preventDefault();
+    newclick.style.background="pink";
+});
+addEventListener("contextmenu",(e)=>
+{
+    e.preventDefault();
+})
