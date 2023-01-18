@@ -518,46 +518,132 @@
 //     console.log("clicked!");
 // })
 //add event listener
-const newclick=document.getElementById("myclick");
-const newbox= document.getElementById('mybox');
-const newtag= document.getElementById('mytag');
-newclick.addEventListener("click",()=>
+// const newclick=document.getElementById("myclick");
+// const newbox= document.getElementById('mybox');
+// const newtag= document.getElementById('mytag');
+// newclick.addEventListener("click",()=>
+// {
+//     // newbox.style.background="purple";
+//     // newbox.style.color="white";
+//     // newbox.style.margin=" 20px";
+//    newbox.classList.add('newcssdiv');
+// });
+// newbox.addEventListener("mouseover",()=>
+// {
+//     newclick.style.transform="scale(1.1)";
+//     newtag.style.background="yellow";
+// });
+// const myinput =document.querySelector('input');
+// newbox.addEventListener("mouseout",()=>
+// {
+//     newclick.style.transform="";
+//     newtag.style.background="green";
+// }
+// );
+// myinput.addEventListener('change',(e)=>
+// {
+//     console.log(e.target.value);
+// });
+// newclick.addEventListener('dblclick',()=>
+// {
+//     document.body.style.background="black";
+// });
+// newclick.addEventListener('click',()=>
+// {
+//     document.body.style.background="white";
+// });
+// newclick.addEventListener('contextmenu',(e)=>
+// {
+//     e.preventDefault();
+//     newclick.style.background="pink";
+// });
+// addEventListener("contextmenu",(e)=>
+// {
+//     e.preventDefault();
+// })
+// local storage and session storage
+const myclickbtn=document.getElementById("myclick");
+const heyinput= document.getElementById("myinput");
+const myclear = document.getElementById("myclear");
+// const callmeback=()=>
+// {
+// //    alert(heyinput.value);
+// // sessionStorage.setItem('key',heyinput.value);
+// localStorage.setItem("name",JSON.stringify({fname:"ram",lname:"thapa",age:23}));
+
+//  };
+const deletetoken=()=>
 {
-    // newbox.style.background="purple";
-    // newbox.style.color="white";
-    // newbox.style.margin=" 20px";
-   newbox.classList.add('newcssdiv');
-});
-newbox.addEventListener("mouseover",()=>
+    localStorage.clear();
+};
+
+
+// myclickbtn.addEventListener('click',callmeback);
+// myclear.addEventListener('click',deletetoken);
+// alert(sessionStorage.getItem("key"));
+
+// myclickbtn.addEventListener('click',callmeback);
+// // alert(localStorage.getItem("key"));
+// if(localStorage.getItem('name'))
+// {
+//     // alert(localStorage.getItem("name"));
+//     console.log(JSON.parse(localStorage.getItem("name")));
+// }
+// else{
+//     alert("xaina");
+// };
+//math object
+// const value = Math.random()
+// console.log(value);
+//abs
+// const value= Math.abs(-5);
+// console.log(value);
+//  function subtract(a,b)
+//  {
+//     return Math.abs(2-6);
+
+//  }
+//  console.log(subtract(2,6));
+//trunk
+// const value=Math.trunc(5.8);
+// console.log(value);
+// const value = Math.round(4.4);
+// console.log(value);
+//floor
+// const value = Math.floor(4.5);
+// console.log(value);
+// const value = Math.max(67,23,44,56,3,3);
+// console.log(value);
+// const value = Math.min(67,23,44,56,3,3);
+// console.log(value);
+// const value= Math.ceil(5.3);
+// console.log(value);
+// const value= Math.pow(5,3);
+// console.log(value)
+// const value= Math.sqrt(81);
+// console.log(value)
+//date in javascript
+// const mydate= new Date();
+// console.log(mydate);
+// const onebyone = new Date();
+// console.log(onebyone.getDay());
+// const onebyone = new Date();
+// console.log(onebyone.getDate());
+// const onebyone = new Date();
+// console.log(onebyone.getMilliseconds());
+// const onebyone = new Date();
+// console.log(onebyone.toISOString());
+//settime out
+// setTimeout(()=>
+// {
+//     console.log("rest in peace");
+// },5000);
+const setid=setInterval(() => {
+
+    console.log("naya plane chaiyo");
+},1000);
+setTimeout(()=>
 {
-    newclick.style.transform="scale(1.1)";
-    newtag.style.background="yellow";
-});
-const myinput =document.querySelector('input');
-newbox.addEventListener("mouseout",()=>
-{
-    newclick.style.transform="";
-    newtag.style.background="green";
-}
-);
-myinput.addEventListener('change',(e)=>
-{
-    console.log(e.target.value);
-});
-newclick.addEventListener('dblclick',()=>
-{
-    document.body.style.background="black";
-});
-newclick.addEventListener('click',()=>
-{
-    document.body.style.background="white";
-});
-newclick.addEventListener('contextmenu',(e)=>
-{
-    e.preventDefault();
-    newclick.style.background="pink";
-});
-addEventListener("contextmenu",(e)=>
-{
-    e.preventDefault();
-})
+ clearInterval(setid);
+ console.log("hai tw");
+},3000)
