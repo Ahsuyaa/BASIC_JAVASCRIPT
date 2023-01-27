@@ -562,9 +562,9 @@
 //     e.preventDefault();
 // })
 // local storage and session storage
-const myclickbtn=document.getElementById("myclick");
-const heyinput= document.getElementById("myinput");
-const myclear = document.getElementById("myclear");
+// const myclickbtn=document.getElementById("myclick");
+// const heyinput= document.getElementById("myinput");
+// const myclear = document.getElementById("myclear");
 // const callmeback=()=>
 // {
 // //    alert(heyinput.value);
@@ -572,10 +572,10 @@ const myclear = document.getElementById("myclear");
 // localStorage.setItem("name",JSON.stringify({fname:"ram",lname:"thapa",age:23}));
 
 //  };
-const deletetoken=()=>
-{
-    localStorage.clear();
-};
+// const deletetoken=()=>
+// {
+//     localStorage.clear();
+// };
 
 
 // myclickbtn.addEventListener('click',callmeback);
@@ -638,12 +638,375 @@ const deletetoken=()=>
 // {
 //     console.log("rest in peace");
 // },5000);
-const setid=setInterval(() => {
+// const setid=setInterval(() => {
 
-    console.log("naya plane chaiyo");
-},1000);
-setTimeout(()=>
-{
- clearInterval(setid);
- console.log("hai tw");
-},3000)
+//     console.log("naya plane chaiyo");
+// },1000);
+// setTimeout(()=>
+// {
+//  clearInterval(setid);
+//  console.log("hai tw");
+// },3000)
+//dom manipulation
+// const form1= document.getElementById("form1");
+// const customername= document.getElementById("customername");
+// const addamount= document.getElementById("addamount");
+// const form2= document.getElementById("form2");
+// const depoaccountnumber= document.getElementById("depoaccountnumber");
+// const depoamount= document.getElementById("depoamount");
+// const form3= document.getElementById("form3");
+// const checkaccountnumber= document.getElementById("checkaccountnumber");
+// const withdrawamount= document.getElementById("withdrawamount");
+// let account=[];
+// form1.addEventListener("submit",(e)=>
+// {
+//     e.preventDefault();
+//     const account= new BankAccount(customername.ariaValueMax,+addamount.value);
+ 
+//     console.log(account);
+// }); 
+// form2.addEventListener("submit",(e)=>
+// {
+//     e.preventDefault();
+//     const depovalue= account.find((value,index)=>
+//     value.accountnumber === +depoaccountnumber.value);
+//     depovalue.deposit(+depoamount.value);
+//     console.log(account);
+// });
+// function BankAccount(customername, balance=0)
+// {
+//     this.customername=customername;
+//     this.accountnumber=Date.now();
+//     this.balance=balance;
+//     this.deposit=function(amount)
+//     {
+//         this.balance=this.balance+amount;
+//     }
+//     this.withdraw=function(amount)
+//     {
+//         this.balance=this.balance-amount;
+//     }
+// }
+//constructor function in javascript
+// function BankAccount(customername, balance=0)
+// {
+//     this.customername=customername;
+//     this.accountnumber=Date.now();
+//     this.balance=balance;
+    // this.deposit= function(amount)
+    // {
+    //     this.balance+=amount;
+    // };
+    // this.withdraw= function(amount)
+    // {
+    //     this.balance-=amount;
+    // };
+// }
+// BankAccount.prototype.deposit=function(amount)
+// {
+//     this.balance+=amount;
+//     console.log(`deposited ${amount},current balance is:${this.balance}`)
+// };;
+// BankAccount.prototype.withdraw= function(amount)
+// {
+//     this.balance-=amount;
+//     if(this.balance>=amount)
+//     {
+//         this.amount-=amount;
+//         console.log(`withdraw ${amount},current balance is :${this.balance}`);
+//     }
+//     else{
+//         console.log(` insufficient balance,current balance is:${this.balance}`);
+//     }
+    
+// };
+
+// console.log(BankAccount.prototype);
+//  const ramaccount =new BankAccount("ram","2000");
+//  const hariaccount =new BankAccount("hari");
+//  hariaccount.deposit(2000);
+//  ramaccount.withdraw(3000);
+//  console.log(ramaccount,hariaccount);
+
+// //class based oop(concept in javascript)
+// // constructor is a special method that is used initialize the object when it is created
+// class BankAccount
+// {
+
+//  constructor( customername,balance=0)
+//  {
+//     this.customername=customername;
+//     this.accountnumber=Date.now();
+//     this.balance=balance;
+//  }
+    
+ 
+// deposit(amount){
+//     this.balance = this.balance + amount
+//     console.log(`Deposited`)
+// }
+// withdraw(amount)
+// {
+//     if(this.balance>=amount)
+//     {
+//         this.balance=this.balance-amount;
+//         console.log(`withdraw ${amount} , current balance is:${this.balance}`);
+//     }
+//     else
+//     {
+//         console.log(`insufficient fund, current balance is:${this.balance}`);
+//     }
+// }
+
+// }
+// const shyamaccount = new BankAccount('shyam',5000);
+// const gitaaccount = new BankAccount("gita"); 
+
+// gitaaccount.deposit(6778);
+// // shyamaccount.withdraw(3000);
+// console.log(shyamaccount,gitaaccount);
+// class person
+// {
+//     constructor(name,age)
+//     {
+//         this.name=name;
+//         this.age=age;
+//     }
+//     sayhello()
+//     {
+//         console.log(`hello my name is ${this.name} and i am ${this.age} years old`);
+//     }
+// }
+// let person1= new person("haliey",23);
+// let person2= new person("selena",24);
+// person1.sayhello();
+// person2.sayhello();
+//inheritance
+// function BankAccount(CustomerName, balance=0)
+// {
+//     this.CustomerName = CustomerName;
+//     this.accountNumber=Date.now();
+//     this.balance= balance;
+//     this.deposit= function(amount)
+//     {
+//         this.balance+=amount;
+//     };
+//   this.withdraw= function(amount)
+//   {
+//     this.balance-= amount;
+//   };
+//}
+// function CurrentAccount(CustomerName, balance=0)
+// {
+//     // this.CustomerName = CustomerName;
+//     // this.accountNumber=Date.now();
+//     // this.balance= balance;
+//     BankAccount.call(this,CustomerName,balance);
+//     this.transactionlimit= 50000;
+// }
+// function savingAccount(CustomerName, balance=0)
+// {
+//     // this.CustomerName = CustomerName;
+//     // this.accountNumber=Date.now();
+//     // this.balance= balance;
+//     BankAccount.call(this,CustomerName,balance);
+//     this.transactionlimit=20000;
+// } 
+// CurrentAccount.prototype.takebussinessloan=function(amount)
+// {
+//     console.log(`take business loan is:${amount}`);
+// }
+// CurrentAccount.prototype= Object.create(BankAccount.prototype);
+// BankAccount.prototype.deposit= function(amount)
+// {
+//     this.balance+=amount;
+// };
+// BankAccount.prototype.withdraw=function(amount)
+// {
+//     this.balance-=amount;
+// }
+//  const hariaccount = new CurrentAccount("hari",3000);
+// // hariaccount.takebussinessloan(3000);
+// hariaccount.withdraw(1000);
+//  console.log(hariaccount);
+// // function person(name,age=0,address,)
+// // {
+// //     this.name=name;
+// //     this.age=+age;
+// //     this.address=address;
+// //     this.say=function( )
+// //     {
+// //         console.log(`hi ${this.name} you stay in ${this.address}`);
+// //     }
+// // }
+// // const aaisa = new person("aaisa",22,"charikot");
+// // const priye= new person("priye",22,"bkt");
+// // aaisa.say();
+// // console.log(aaisa,priye);
+// function based oop
+// function BankAccount(CustomerName , balance=0)
+// {
+//     this.CustomerName= CustomerName;
+//     this.accountNumber= Date.now();
+//     this.balance=balance;
+//     // this.deposit = function(amount)
+//     // {
+//     //     this.balance  += amount;
+
+//     // }
+//     // this.withdraw = function(amount)
+//     // {
+//     //     this.balance  -= amount;
+
+//     // }
+// }
+// // BankAccount.prototype.add= " this is new add";
+
+
+
+// BankAccount.prototype.deposit= function(amount)
+// {
+//     this.balance +=amount;
+// }
+// BankAccount.prototype.withdraw= function(amount)
+// {
+//     this.balance -=amount;
+// }
+//child class(inheritance)
+// function CurrentAccount(CustomerName , balance=0)
+// {
+//    BankAccount.call(this, CustomerName,balance);
+//    this.transactionlimit=50000;
+// };
+// CurrentAccount.prototype = Object.create(BankAccount.prototype);
+// CurrentAccount.prototype.takebusinessloan= function(amount)
+// {
+//     console.log(`taking business loan is :${amount}`);
+// }
+// // console.log(BankAccount.prototype);
+// const ramaccount= new CurrentAccount("ram",7000);
+// // const hariaccount= new BankAccount("hari",72000);
+// ramaccount.takebusinessloan(40000);
+// console.log(ramaccount);
+// // ramaccount.deposit(100000);
+// // ramaccount.withdraw(70000);
+//class based oop and inheritance
+// class BankAccount
+// {
+//   CustomerName
+//   AccountNumber
+//   #balance
+//   constructor(CustomerName, balance=0)
+//   {
+//     this.CustomerName=CustomerName;
+//     this.AccountNumber=Date.now();
+//     this.#balance= balance;
+//   }
+//   deposit(amount)
+//   {
+//     this.#balance+=amount;
+//     console.log(`deposited ${amount}, current balance is :${this.balance}`);
+
+//   }
+//   withdraw(amount)
+//   {
+//    if(this.#balance>=amount)
+//    {
+//     this.balance-=amount;
+//     console.log(`withdraw ${amount},current balance is :${this.balance}`);
+//    }
+//    else
+//    {
+//     this.balance-=amount;
+//     console.log(`insufficient balance :${this.balance}`);
+//    }
+
+//   }
+//   set balance(amount)
+//    {
+//      this.#balance=amount;
+//    }
+//    get balance()
+//    {
+//    return  this.#balance;
+//    }
+// }
+// class CurrentAccount extends BankAccount
+// {
+// constructor(CustomerName, balance=0)
+// {
+//     super(CustomerName,balance);
+//     this.transactionlimit=50000;
+// }
+// #calculateinterest(amount)
+// {
+//     const interest= amount*0.1;
+//     console.log(`intrest amount is :${interest}`)
+//     console.log(`calculating intrest`)
+// }
+// takebusinessloan(amount)
+// {
+//     this.#calculateinterest(amount)
+//     console.log(`taking business loan is :${amount}`);
+// }
+// }
+// const ramaccount= new CurrentAccount("ram",6000);
+// // ramaccount.deposit(900);
+// // ramaccount.withdraw(2100);
+
+// // ramaccount.balance(800);// aba # use garepaxi milena 
+// ramaccount.takebusinessloan(2000);
+// console.log(ramaccount);
+// static property and methid
+// class calculator
+// {
+//     static add(a,b)
+//     {
+//         return a+b;
+//     }
+//     static subtract(a,b)
+//     {
+//         return Math.abs(a-b);
+//     }
+// }
+// let addition = calculator.add(2,3);
+// console.log(addition);
+// let subtraction = calculator.subtract(2,3);
+// console.log(subtraction);
+// let ans = Math.random();
+// console.log(ans);
+// class user{
+//     static id =1;
+//     constructor(name,age,income)
+//    {
+//     this.name=name;
+//     this.age=age;
+//     this.income=income;
+//     this.id=user.id++;
+//    }
+//    static sortbyage(a,b)
+//    {
+//     return a.age -b.age;
+//    }
+//    static sortbyincome(a,b)
+//    {
+//     return a.income -b.income;
+//    }
+// }
+// const user1= new user("ram",23,12000);
+// const user2= new user("shyam",27,10000);
+// const user3= new user("ramam",22,67000);
+// const users =[user1,user2,user3];
+// users.sort(user.sortbyincome);
+// console.log(users);
+// function myfunc(name="ram")
+// {
+//     setTimeout(()=>{
+//     for(let i=0;i<100;i++)
+//     {
+//     console.log(`what up ${name}`);
+//     }},4000);
+// }
+// myfunc();
+// alert("hello");
+// console.log("last");
