@@ -1010,3 +1010,76 @@
 // myfunc();
 // alert("hello");
 // console.log("last");
+// callback
+// function calculation(a,b,callback)
+// {
+//     let result=a+b;
+//    callback(result);
+// }
+// calculation(2,5,((sum)=>console.log(`the sum id :${sum}`)));
+// let arr=[2,3,45,66,6,5,31];
+// function calculation(arr=[],callback)
+// {
+//     let newarr=[];
+//     for(i=0;i<arr.length;i++)
+//     {
+//         const element=callback(arr[i]+8);
+//         newarr.push(element);
+//     }
+//     console.log(newarr);
+// }
+// function add(a)
+// {
+//     return a+5;
+// }
+// function subtract(a)
+// {
+//     return a-5;
+// }
+// calculation(arr,add);
+// calculation(arr,subtract);
+
+//promises conceptt
+// const a= new Promise((resolve,reject)=>{
+// //   resolve("promise fullfilled");
+// reject("technical error");
+// }
+// );
+//  a.then((msg)=>console.log(msg))
+//  .catch((error)=>console.log(error))
+//  .finally(()=>console.log("work either or not"));
+
+// let arr =[];
+// function fetcheddata(arr=[])
+// {
+//     return new Promise((resolve,reject)=>
+//     {
+//      arr.push({name:"ram",age:21})  
+//      if(arr.length>0)
+//      {
+//         resolve("promise fullfilled");
+//      }
+//      else{
+//         reject("some technical eror")
+//      }
+//     }
+//     );
+// }
+// fetcheddata(arr).then((msg)=>console.log(msg))
+// .catch((error)=>console.log(error))
+// .finally(()=>console.log("all done"));
+
+// fetch Api
+const h1= document.querySelector('h1');
+
+const url ="https://catfact.ninja/fact";
+function fetchdata()
+{
+    fetch(url)
+    .then((res)=>{
+        return res.json();
+    })
+    .then((data)=>(h1.innerText=data.fact))
+    .catch((error)=>console.log(error));
+}
+fetchdata();
