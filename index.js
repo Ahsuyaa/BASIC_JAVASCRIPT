@@ -1070,16 +1070,123 @@
 // .finally(()=>console.log("all done"));
 
 // fetch Api
-const h1= document.querySelector('h1');
+// const h1= document.querySelector('h1');
 
-const url ="https://catfact.ninja/fact";
-function fetchdata()
+// const url ="https://catfact.ninja/fact";
+// function fetchdata()
+// {
+//     fetch(url)
+//     .then((res)=>{
+//         return res.json();
+//     })
+//     .then((data)=>(h1.innerText=data.fact))
+//     .catch((error)=>console.log(error));
+// }
+// fetchdata();
+
+//hoisting
+// function myfunc(a,b)
+// {
+//     return a+b;
+// }
+// const bv = myfunc(2,1);
+// console.log(bv);
+
+// const myfunc = (a,b)=>
+// {
+//     return a+b;
+// }
+// const bv = myfunc(2,1);
+// console.log(bv);
+
+//bom
+// console.log(navigator);
+// navigator.geolocation.getCurrentPosition((d)=>
+// {
+//     console.log(d.coords.latitude);
+// })
+
+// console.log(location.protocol);
+// console.log(location.hostname);
+// console.log(location.port);
+// console.log(location.pathname);
+// console.log(location.href);
+ 
+// const myfunc =()=>location.assign("https://www.youtube.com");
+
+// console.log(history);
+// console.log(screen);
+
+//async and await in javascript (promise handling)
+// const h1= document.querySelector("h1");
+
+// const url ="https://catfact.ninja/fact";
+// console.log("a");
+// const fetcheddata=async()=>{
+//     try{
+//         console.log("b");
+// const res=await fetch(url);
+// console.log("c");
+// const data = await res.json();
+// console.log("d");
+// h1.innerText= data.fact;
+//     }
+//     catch(err)
+//     {
+//         console.log(err.mesage);
+//     }
+
+// }
+// fetcheddata();
+// console.log("z");
+
+//normal function
+//  const obj =
+//  {
+//     name:"aayusha",
+//     printname:function(){
+//         console.log(this.name);
+//     }
+//  };
+//  obj.printname();
+
+ //arrow function
+//  const obj =
+//  {
+//     name:"aayusha",
+//     printname:()=>{
+//         console.log(this.name);
+//     }
+//  };
+//  obj.printname();
+
+//normal fnction
+// function printarguments()
+// {
+// console.log(arguments);
+// }
+// printarguments(1,2,3);
+
+//arrow function
+// const printarguments= ()=>
+// {
+// console.log(arguments);
+// }
+// printarguments(1,2,3);
+
+//normal function
+
+// function person(name)
+// {
+//     this.name=name;
+// }
+// const john = new person("john");
+// console.log(john.name);
+
+//arrow function
+const  person=(name)=>
 {
-    fetch(url)
-    .then((res)=>{
-        return res.json();
-    })
-    .then((data)=>(h1.innerText=data.fact))
-    .catch((error)=>console.log(error));
+    this.name=name;
 }
-fetchdata();
+const john = new person("john");
+console.log(john.name);
